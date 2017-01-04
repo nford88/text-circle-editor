@@ -1,0 +1,43 @@
+<template name="navbar">
+  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+      <div class="container" id="navfluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">TextCircle</a>
+          </div><!--end of header and toggle -->
+
+                <!--start of collapsable nav  -->
+          <div class="collapse navbar-collapse" id="navigationbar">
+            <!--left side nav-->
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="#" class="js-add-doc">
+                  <span class="glyphicon glyphicon-plus" aria-hiden="true"></span> A New Document</a>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Documents</a>
+                      <ul class="dropdown-menu">
+                        {{#each documents}}
+                        <li><a href="/documents/{{_id}}">{{title}}</a></li>
+                        {{/each}}
+                      </ul>
+                </li>
+            </ul><!--end of left  side nav-->
+
+                  <!---start of right side nav-->
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">{{> loginButtons}}</a></li>
+              </ul><!---end of start of right side nav-->
+
+        </div>  <!--end of collapsable bar -->
+
+
+      </div><!-- container end -->
+    </nav> <!-- nav end -->
+</template> <!-- template end -->

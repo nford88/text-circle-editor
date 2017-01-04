@@ -1,0 +1,24 @@
+/* CSS declarations go here */
+.top-margin{
+	margin-top:60px;
+}
+
+#viewer{
+	border: 1px solid gray;
+	resize: both;
+	width: 100%;
+}
+
+.border{
+	box-sizing: border-box;;
+	border: 5px solid black;
+	height: 150px;
+	width: 150px;
+	margin: 15px auto;
+	vertical-align: middle;
+}
+
+.title{
+	text-align: center;
+	vertical-align: middle;
+}
