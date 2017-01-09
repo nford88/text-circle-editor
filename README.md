@@ -1,4 +1,4 @@
-# text-circle-editor
+# TextCircle Collaborative Code Editor
 
 This app is deployed here https://guarded-savannah-51094.herokuapp.com/
 
